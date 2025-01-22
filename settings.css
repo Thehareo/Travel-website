@@ -1,6 +1,6 @@
 /* Basic styles for the settings page */
 body {
-    background-image: url("/assets/foggy-birds.png");
+    background-image: url("foggy-birds.png");
     background-color: #999999;
     font-family: Arial, sans-serif;
     margin: 0;

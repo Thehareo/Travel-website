@@ -17,7 +17,7 @@ html{
 }
 /* Body styles */
 body {
-   
+   height: 50vh;
     background-color: #fff;
     color: #333;
     font-family: "Galindo", serif;
@@ -28,7 +28,7 @@ body {
 #vid {
     position: relative;
     width: 100%;
-    height: 100%; /* You can adjust this height to suit your layout */
+    height: 110%; /* You can adjust this height to suit your layout */
     transition: 0.5s;
 }
 

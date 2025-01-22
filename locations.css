@@ -13,7 +13,7 @@ html{
 body {
     font-family: Arial, sans-serif;
     color: #c2c2c2;
-    background-image: url("/assets/foggy-birds.png");
+    background-image: url("foggy-birds.png");
     background-color: #999999;
     height: 100vh; /* Ensure full height */
     width: 100%;
@@ -115,27 +115,27 @@ h2 {
 }
 
 .location.france::before {
-    background-image: url('assets/pais.jpg');
+    background-image: url('pais.jpg');
 }
 
 .location.usa::before {
-    background-image: url('/assets/new\ yark.jpg');
+    background-image: url('new\ yark.jpg');
 }
 
 .location.japan::before {
-    background-image: url('/assets/tokyo.jpg');
+    background-image: url('tokyo.jpg');
 }
 
 .location.uk::before {
-    background-image: url('/assets/london.jpg');
+    background-image: url('london.jpg');
 }
 
 .location.australia::before {
-    background-image: url('assets/sydney.jpg');
+    background-image: url('sydney.jpg');
 }
 
 .location.uae::before {
-    background-image: url('assets/dubai.jpg');
+    background-image: url('dubai.jpg');
 }
 
 /* Header */
