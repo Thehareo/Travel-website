@@ -1,0 +1,188 @@
+:root {
+    --theme-color: #7c4fa1;
+    --theme-color-dark: #532a7d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #c2c2c2;
+    background-image: url("/assets/foggy-birds.png");
+    background-color: #9b9b9b;
+    height: 100vh; /* Ensure full height */
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    font-family: "Galindo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+     font-family: "Galindo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+/* Header */
+
+header {
+    background-color: var(--theme-color, #7c4fa1);
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Galindo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+header .title h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+header nav ul:hover {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--theme-color-dark, #532a7d);
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#big{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: "Galindo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    color: var(--theme-color);
+    animation: going-up 2s ease-out forwards;
+    width: 100vw;
+}
+@keyframes going-up{
+    0%{
+       opacity: 0;
+        font-size: 0px;
+        
+    }
+    50%{
+     
+        font-size: 200px;
+    }
+    100%{
+        opacity: 1;
+        left: 55%;
+}
+}
+#box1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+ width: 200px;
+ height: 200px;
+ background-color: #fff;
+ animation: also 2s ease-out forwards;
+ opacity: 0;
+}
+#box2{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+ width: 200px;
+ height: 200px;
+ background-color: #0026ff;
+ animation: also 2s ease-out forwards;
+ animation-delay: 0.3s;
+ opacity: 0;
+}
+#box3{
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+ width: 200px;
+ height: 200px;
+ background-color: #000000;
+ animation: also 2s ease-out forwards;
+ animation-delay: 0.6s;
+ opacity: 0;
+}
+@keyframes also{
+    0%{
+       height:300px; 
+       margin-top: 600px;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+#vision{
+
+    color:var(--theme-color);
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    opacity: 0;
+    animation: fade-in 2s ease-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}

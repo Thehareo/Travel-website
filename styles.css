@@ -1,0 +1,185 @@
+:root {
+    --theme-color: #7c4fa1;
+    --theme-color-dark: #532a7d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 0  !important;
+}
+html{
+    font-family: "Galindo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Body styles */
+body {
+   
+    background-color: #fff;
+    color: #333;
+    font-family: "Galindo", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#vid {
+    position: relative;
+    width: 100%;
+    height: 100%; /* You can adjust this height to suit your layout */
+    transition: 0.5s;
+}
+
+#vid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: 1s;
+}
+.get-started:hover ~ #vid img {
+    filter: blur(5px); 
+}
+.welcome {
+    position: absolute;
+    top: 50%; /* Centers the content vertically */
+    left: 50%; /* Centers the content horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for exact center alignment */
+    color: white; /* Changes text color for visibility on the image */
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background for better text visibility */
+    border-radius: 10px; /* Optional, for rounded corners */
+}
+
+.get-started {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+/* Header */
+header {
+    background-color:var(--theme-color); /* Purple background */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .title h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.5s;
+}
+header nav ul:hover {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--theme-color-dark)
+}
+
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--theme-color);
+    font-size: 2rem;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Get Started Button */
+.get-started {
+    display: inline-block;
+    background-color: var(--theme-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: var(--theme-color-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Sign-up form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input {
+    margin: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #6a4c9c;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #6a4c9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #532a7d;
+}
